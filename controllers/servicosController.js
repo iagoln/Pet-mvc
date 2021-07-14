@@ -2,7 +2,8 @@
 const servicojson = require('../database/servicos.json')
 const servicoController = {
     index: (req, res) => {
-        return res.json(servicojson.servicos)
+       return res.render('index')
+        //return res.json(servicojson.servicos)
     },
     show: (req, res) => {
         const { id } = req.params
