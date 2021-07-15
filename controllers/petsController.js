@@ -1,7 +1,7 @@
 const petsJson = require('../database/pets.json') 
 const petsController= {
     index:(req,res) => {
-      return res.send(petsJson.pets)  
+      return res.rend("index")  
     },
     show: (req, res) => {
       const { id } = req.params
